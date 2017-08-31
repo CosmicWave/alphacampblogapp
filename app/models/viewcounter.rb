@@ -1,0 +1,2 @@
+class Viewcounter < ApplicationRecord
+end

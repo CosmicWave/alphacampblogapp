@@ -1,0 +1,26 @@
+
+
+
+
+<%= form_for @post, url: post_path(id: @post.id), method: :put do |f| %>
+
+<div>
+	<%= f.label  :title %>
+	<%= f.text_field :title %>
+</div>
+
+
+<div>
+	<%= f.label  :author %>
+  <%= f.text_field :author %>
+</div>
+
+<div>
+  <%= f.label  :content %>
+  <%= f.text_area :content %>
+</div>
+
+
+
+  <%= f.submit "Create" %>
+<% end %>

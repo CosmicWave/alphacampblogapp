@@ -7,4 +7,14 @@ Rails.application.routes.draw do
 
 
   	get "contact", to: "pages#contact"
+
+
+
+  #	get "post/new", to: "posts"new"
+  #	post "post", to: "posts#create"
+
+  	resources :posts, only: [:index, :show, :new, :create, :edit, :update]
+
+
+
 end
