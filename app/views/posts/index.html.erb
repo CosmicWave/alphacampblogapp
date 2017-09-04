@@ -1,3 +1,7 @@
+
+
+
+
 <table>
 
 	<thead>
@@ -8,8 +12,41 @@
 
 	<tbody>
 
-	  <% @posts.each do |post|	%>
+	
+		<nav class="nav-main">
+			<div class="logo">Regent C</div>
+			<ul>
+				
+				<li>
+					<label for="Profile" class="nav-item">Profile</label>
+				</li>
 
+				<li>
+					<label for="Resume" class="nav-item">Resume</label>
+				</li>
+				<li>
+					<label for="myWorks" class="nav-item">My Works</label>
+				</li>
+				<li>
+					<label for="contactMe" class="nav-item">Contact Me</label>
+				</li>
+			</ul>
+		</nav>
+
+
+<div class="background-image">
+
+			<div class="container">
+				<h1 class="header-text">R.c</h1>
+					<h2 class="h2">My Blog</h2>
+			</div>
+
+
+
+	<div class="container">
+	  <table align="center">
+	   <% @posts.each do |post|	%>
+	  
 		 <tr>
 			<td>	
 				<%= post.title	%>
@@ -26,12 +63,30 @@
 			<td>	
 				<%= link_to 'View', post_path(id: post.id) %>
 			</td>
+
+
+			<td>
+				<%= link_to 'Destroy', post_path(id: post.id),
+					method: :delete,
+					data: { confirm: 'Are you sure?'} %>
+			</td>
+
 		 </tr>
+	 
 		<% end	%>	
 
-		</tr>
+		</table>
+
+	</div>
+		
 
 	</tbody>
 </table>
 
+
+		
+
+
 <%= link_to 'Create New Post', new_post_path %>
+
+</div>

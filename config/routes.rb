@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-	root to: "pages#home"
+	#root to: "pages#home"
+	root to: "posts#index"
   
 
   	get "about", to: "pages#about"
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
   #	get "post/new", to: "posts"new"
   #	post "post", to: "posts#create"
 
-  	resources :posts, only: [:index, :show, :new, :create, :edit, :update]
+  	resources :posts, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
 
 

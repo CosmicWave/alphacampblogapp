@@ -16,3 +16,77 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
+.background-image {
+	background: image-url('https://static.pexels.com/photos/57705/lake-evening-sunset-abendstimmung-57705.jpeg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;
+}
+
+
+.header-text {
+	text-align:Center;
+	font-size: 200px;
+	padding-top: 5%;
+
+}
+
+
+
+.h2 {
+	text-align:Center;
+	font-size: 60px;
+}
+
+
+.table, th, td {
+    border: 3px solid black;
+}
+
+
+.nav-main .logo {
+	float:left;
+	height:40px;
+	padding:15px 30px;
+	font-size:1.4em;
+	line-height:40px;
+}
+
+.nav-main {
+	width:100%;
+	background-color:#222;
+	height:70px;
+	color:#fff;
+	position:fixed;
+}
+
+.nav-main > ul {
+	margin:0;
+	padding:0;
+	float:left;
+	list-style-type:none;
+}
+
+
+.nav-main > ul > li {
+	float:left;
+}
+
+.nav-item {
+	display:inline-block;
+	padding: 15px 20px;
+	height:40px;
+	line-height:40px;
+	margin:0;
+}
+
+
+.nav-item:hover {
+	background-color:#111;
+	cursor:pointer;
+	height:70px;
+}
